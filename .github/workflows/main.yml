@@ -23,7 +23,7 @@ jobs:
       - name: Run tests and generate coverage
         run: |
           mkdir -p coverage
-          npx mocha --reporter mocha-lcov-reporter > coverage/lcov.info || true
+          npx mocha --reporter mocha-lcov-reporter > coverage/lcov.info --exit
 
       - name: List coverage folder contents
         run: ls -l coverage
