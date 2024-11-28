@@ -21,11 +21,9 @@ jobs:
         run: npm install --save-dev mocha-lcov-reporter
 
       - name: Run tests
-        run: npm test -- --reporter mocha-lcov-reporter>coverage/lcov.info || true
+        run: npm test -- --reporter mocha-lcov-reporter || true
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2.3.4
         with:
-          path-to-lcov: coverage/lcov.info
-        env:
           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN}}
