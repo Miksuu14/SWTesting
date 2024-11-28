@@ -28,6 +28,9 @@ jobs:
       - name: List coverage folder contents
         run: ls -l coverage
 
+      - name: Print coverage
+        run: cat coverage/lcov.info  
+
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2.3.4
         with:
