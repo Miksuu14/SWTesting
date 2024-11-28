@@ -17,14 +17,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Debug permissions
-        run: ls -l node_modules/.bin
+      - name: Install mocha-lcov-reporter
+        run: npm install --save-dev mocha-lcov-reporter
 
       - name: Run tests
-        run: npm test || true
-      
-      - name: Generate coverage report
-        run: npm run coverage
+        run: npm test --reporter mocha-lcov-reporter || true
 
       - name: Coveralls GitHub Action
         if: always()
