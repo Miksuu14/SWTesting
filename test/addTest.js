@@ -24,7 +24,7 @@ describe('add function', () => {
     expect(add(0, 0)).to.equal(0);
   });
 
-  it('adds a float and a float,', () => {
+  it('adds a float and a float', () => {
     expect(add(0.1, 0.1)).to.equal(0.2);
   });
 
