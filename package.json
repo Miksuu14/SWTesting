@@ -15,6 +15,7 @@
     "mocha": "^10.8.2"
   },
   "dependencies": {
-    "c8": "^7.14.0"
+    "c8": "^7.14.0",
+    "swtesting": "file:"
   }
 }
