@@ -9,13 +9,12 @@
     "test-coverage": "c8 --reporter=lcov --reporter-dir=coverage mocha './test/*Test.js'"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^5.1.2",
     "mocha": "^10.8.2"
   },
   "dependencies": {
-    "c8": "^7.14.0",
-    "swtesting": "file:"
+    "c8": "^7.14.0"
   }
 }
