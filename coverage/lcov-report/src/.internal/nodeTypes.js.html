@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>28/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">11.76% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/21</span>
+                <span class='fraction'>2/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>28/28</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -91,59 +91,59 @@
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import freeGlobal from './freeGlobal.js'
 &nbsp;
 /** Detect free variable `exports`. */
-const freeExports = <span class="cstat-no" title="statement not covered" >typeof exports === 'object' &amp;&amp; exports !== null &amp;&amp; !exports.nodeType &amp;&amp; exports</span>
+const freeExports = typeof exports === 'object' <span class="branch-0 cbranch-no" title="branch not covered" >&amp;&amp; exports !== null <span class="branch-0 cbranch-no" title="branch not covered" ></span>&amp;&amp; !exports.nodeType <span class="branch-0 cbranch-no" title="branch not covered" ></span>&amp;&amp; exports</span>
 &nbsp;
 /** Detect free variable `module`. */
-const freeModule = <span class="cstat-no" title="statement not covered" >freeExports &amp;&amp; typeof module === 'object' &amp;&amp; module !== null &amp;&amp; !module.nodeType &amp;&amp; module</span>
+const freeModule = freeExports <span class="branch-0 cbranch-no" title="branch not covered" >&amp;&amp; typeof module === 'object' <span class="branch-0 cbranch-no" title="branch not covered" ></span>&amp;&amp; module !== null <span class="branch-0 cbranch-no" title="branch not covered" ></span>&amp;&amp; !module.nodeType <span class="branch-0 cbranch-no" title="branch not covered" ></span>&amp;&amp; module</span>
 &nbsp;
 /** Detect the popular CommonJS extension `module.exports`. */
-const moduleExports = <span class="cstat-no" title="statement not covered" >freeModule &amp;&amp; freeModule.exports === freeExports</span>
+const moduleExports = freeModule <span class="branch-0 cbranch-no" title="branch not covered" >&amp;&amp; freeModule.exports === freeExports</span>
 &nbsp;
 /** Detect free variable `process` from Node.js. */
-const freeProcess = <span class="cstat-no" title="statement not covered" >moduleExports &amp;&amp; freeGlobal.process</span>
+const freeProcess = moduleExports <span class="branch-0 cbranch-no" title="branch not covered" >&amp;&amp; freeGlobal.process</span>
 &nbsp;
 /** Used to access faster Node.js helpers. */
-const nodeTypes = (<span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  try {</span>
+const nodeTypes = ((() =&gt; {
+  try {
     /* Detect public `util.types` helpers for Node.js v10+. */
     /* Node.js deprecation code: DEP0103. */
-    const typesHelper = <span class="cstat-no" title="statement not covered" >freeModule &amp;&amp; freeModule.require &amp;&amp; freeModule.require('util').types</span>
-<span class="cstat-no" title="statement not covered" >    return typesHelper</span>
-      ? typesHelper
+    const typesHelper = freeModule <span class="branch-0 cbranch-no" title="branch not covered" >&amp;&amp; freeModule.require <span class="branch-0 cbranch-no" title="branch not covered" ></span>&amp;&amp; freeModule.require('util').types</span>
+    return typesHelper
+<span class="branch-0 cbranch-no" title="branch not covered" >      ? typesHelper</span>
       /* Legacy process.binding('util') for Node.js earlier than v10. */
-      : freeProcess &amp;&amp; freeProcess.binding &amp;&amp; freeProcess.binding('util')
-  } catch (e) {}
+      : freeProcess <span class="branch-0 cbranch-no" title="branch not covered" >&amp;&amp; freeProcess.binding <span class="branch-0 cbranch-no" title="branch not covered" ></span>&amp;&amp; freeProcess.binding('util')</span>
+  } <span class="branch-0 cbranch-no" title="branch not covered" >catch (e) {}</span>
 })())
 &nbsp;
 export default nodeTypes
@@ -154,7 +154,7 @@ export default nodeTypes
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-01T11:15:00.749Z
+                at 2024-12-08T14:56:18.174Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
