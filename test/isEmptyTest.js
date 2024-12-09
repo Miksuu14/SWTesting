@@ -1,6 +1,5 @@
 //imports
 import isEmpty from '../src/isEmpty.js';
-import filter from '../src/isEmpty.js';
 import {expect} from 'chai';
 
 //Testing with null and undefined values. then with number, boolean and string. After that testing Array, Object, Maps and Sets.
