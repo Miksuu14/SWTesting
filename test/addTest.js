@@ -49,5 +49,21 @@ describe('add function', () => {
     expect(add(undefined, 1)).to.equal(undefined);
   });
 
+  it('adding undefined to undefined', () => {
+    expect(add(undefined, undefined)).to.equal(undefined);
+  });
+
+  it('adding number to infinity', () => {
+    expect(add(Infinity, 1)).to.equal(Infinity);
+  });
+
+  it('adding infinity to infinity', () => {
+    expect(add(Infinity, Infinity)).to.equal(Infinity);
+  });
+
+  it('adding infinity to negative infinity', () => {
+    expect(add(Infinity, -Infinity)).to.equal(undefined);
+  });
+
 });
 

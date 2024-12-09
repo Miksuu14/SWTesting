@@ -27,5 +27,17 @@ describe('countBy function', () => {
         const result = countBy([], (value) => value);
         expect(result).to.deep.equal({});
     });
+
+    it('handles iteratee returning undefined', () => {
+        const array = [1, 2, 3];
+        const result = countBy(array, () => undefined);
+        expect(result).to.deep.equal({ undefined: 3 });
+    });
+
+    it('handles collections with complex keys', () => {
+        const array = [1, 2, 3];
+        const result = countBy(array, (value) => `key-${value}`);
+        expect(result).to.deep.equal({ 'key-1': 1, 'key-2': 1, 'key-3': 1 });
+    });
 });
 
