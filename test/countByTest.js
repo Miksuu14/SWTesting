@@ -39,5 +39,13 @@ describe('countBy function', () => {
         const result = countBy(array, (value) => `key-${value}`);
         expect(result).to.deep.equal({ 'key-1': 1, 'key-2': 1, 'key-3': 1 });
     });
+
+    it('accessing the __proto__ branch', () => {
+        const array = ['__proto__', '__proto__', 'test'];
+        const result = countBy(array, (value) => value);
+        
+        // Verify that the __proto__ key has been set correctly
+        expect(result).to.have.property('__proto__', 2);
+    });
 });
 

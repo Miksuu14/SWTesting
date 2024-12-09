@@ -49,6 +49,11 @@ describe('add function', () => {
     expect(add(undefined, 1)).to.equal(undefined);
   });
 
+  // Since undefined + 1 should be undefined
+  it('trying to add undefined to a number', () => {
+    expect(add(1, undefined)).to.equal(undefined);
+  });
+
   it('adding undefined to undefined', () => {
     expect(add(undefined, undefined)).to.equal(undefined);
   });
