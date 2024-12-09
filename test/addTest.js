@@ -1,7 +1,7 @@
 // Import the `add` function
 import add from '../src/add.js';
 // Import Chai for assertions
-import { expect } from 'chai';
+import expect from 'chai';
 
 describe('add function', () => {
   it('adds two positive numbers', () => {
