@@ -2,8 +2,6 @@
 import isEmpty from '../src/isEmpty.js';
 import {expect} from 'chai';
 
-//Testing with null and undefined values. then with number, boolean and string. After that testing Array, Object, Maps and Sets.
-
 describe('isEmpty function', () => {
     //Empty, null and undefined
     it('Should return true for null, undefined and empty', () => {
@@ -50,5 +48,49 @@ describe('isEmpty function', () => {
     it('Should return false for Set with values', () => {
         expect(isEmpty(new Set([1, 2]))).to.eql(false);
     })
+     // Arguments object
+     it('Should return true for an empty arguments object', () => {
+        function testArgs() {
+            return arguments;
+        }
+        expect(isEmpty(testArgs())).to.eql(true); 
+    });
+    it('Should return false for an arguments object with values', () => {
+        function testArgs() {
+            return arguments;
+        }
+        expect(isEmpty(testArgs(1, 2, 3))).to.eql(false); 
+    });
+    // Buffer 
+    it('Should return true for an empty Buffer', () => {
+        if (typeof Buffer !== 'undefined') { // Check if Buffer exists (Node.js environment)
+            expect(isEmpty(Buffer.alloc(0))).to.eql(true);
+        }
+    });
+    it('Should return false for a Buffer with data', () => {
+        if (typeof Buffer !== 'undefined') {
+            expect(isEmpty(Buffer.from('data'))).to.eql(false);
+        }
+    });
+    // TypedArray
+    it('Should return true for an empty TypedArray', () => {
+        expect(isEmpty(new Uint8Array())).to.eql(true);
+    });
+    it('Should return false for a TypedArray with data', () => {
+        expect(isEmpty(new Uint8Array([1, 2, 3]))).to.eql(false);
+    });
+    // String with length 0 
+    it('Should return true for an empty string', () => { 
+        expect(isEmpty('')).to.eql(true);
+    });
+    // Function
+    it('Should return true for a function', () => { 
+        expect(isEmpty(() => {})).to.eql(true);
+    });
+    // Prototype of an object
+    it('Should return true for the prototype of an object (which has no own properties)', () => {
+        function Test() {}
+        expect(isEmpty(Test.prototype)).to.eql(true); 
+    });
 
 })
