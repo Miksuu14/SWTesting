@@ -24,11 +24,12 @@ describe('ceil function', () => {
     expect(isNaN(ceil('a', 1))).to.be.true;
   })
 
-  it('Try rounding up number with character', () => {
-    expect(isNaN(ceil(1 , 'a'))).to.be.true;
+  // should return number as is
+  it('rounding up number with a character', () => {
+    expect(ceil(1 , 'a')).to.equal(1);
   })
 
-  it('Try rounding up decimalnumber with character', () => {
+  it('rounding up decimal number with a character', () => {
     expect(ceil(0.01 , 'a')).to.equal(0.01);
   })
 

@@ -28,29 +28,29 @@ describe('add function', () => {
     expect(add(0.1, 0.1)).to.equal(0.2);
   });
 
-  it('trying to add an int and a string', () => {
+  it('adding an int and a string', () => {
     expect(isNaN(add(1, "R"))).to.be.true;
   });
 
-  it('trying to add string to a string', () => {
+  it('adding string to a string', () => {
     expect(isNaN(add("C", "V"))).to.be.true;
   });
 
-  it('trying to add number to NaN', () => {
+  it('adding number to NaN', () => {
     expect(isNaN(add(NaN, 1))).to.be.true;
   });
 
-  it('trying to add number to null', () => {
+  it('adding number to null', () => {
     expect(add(null, 1)).to.deep.equal(1);
   });
 
   // Since undefined + 1 should be undefined
-  it('trying to add number to undefined', () => {
+  it('adding number to undefined', () => {
     expect(add(undefined, 1)).to.equal(undefined);
   });
 
   // Since undefined + 1 should be undefined
-  it('trying to add undefined to a number', () => {
+  it('adding undefined to a number', () => {
     expect(add(1, undefined)).to.equal(undefined);
   });
 

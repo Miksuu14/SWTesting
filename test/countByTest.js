@@ -7,7 +7,7 @@ import { expect } from 'chai';
 // The problem lies at countBy.js line 35 "baseAssignValue(result, key, 0)"
 // The value 0 should be 1 when an object is in the data.
 describe('countBy function', () => {
-    it('Count users by number', () => {
+    it('count users by number', () => {
         const users = [
             { user: 'barney', active: true },
             { user: 'betty', active: true },

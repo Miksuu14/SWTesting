@@ -27,4 +27,8 @@ describe('defaultTo function', () => {
     it('Return false since it is valid', () => {
         expect(defaultTo(false, true)).to.equal(false);
     });
+
+    it('Return infinity since it is valid', () => {
+        expect(defaultTo(Infinity, 1)).to.equal(Infinity);
+    });
 });

@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">64% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>16/25</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">64% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>16/25</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -88,36 +88,36 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/** Used as references for various `Number` constants. */
-const MAX_SAFE_INTEGER = <span class="cstat-no" title="statement not covered" >9007199254740991</span>
+const MAX_SAFE_INTEGER = 9007199254740991
 &nbsp;
 /** Used to detect unsigned integer values. */
-const reIsUint = <span class="cstat-no" title="statement not covered" >/^(?:0|[1-9]\d*)$/</span>
+const reIsUint = /^(?:0|[1-9]\d*)$/
 &nbsp;
 /**
  * Checks if `value` is a valid array-like index.
@@ -127,15 +127,15 @@ const reIsUint = <span class="cstat-no" title="statement not covered" >/^(?:0|[1
  * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
  * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
  */
-function <span class="fstat-no" title="function not covered" >isIndex(</span>value, length) {
-  const type = <span class="cstat-no" title="statement not covered" >typeof value</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function isIndex(value, length) {</span></span>
+<span class="cstat-no" title="statement not covered" >  const type = typeof value</span>
 <span class="cstat-no" title="statement not covered" >  length = length == null ? MAX_SAFE_INTEGER : length</span>
-&nbsp;
+<span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >  return !!length &amp;&amp;</span>
-    (type === 'number' ||
-      (type !== 'symbol' &amp;&amp; reIsUint.test(value))) &amp;&amp;
-        (value &gt; -1 &amp;&amp; value % 1 == 0 &amp;&amp; value &lt; length)
-}
+<span class="cstat-no" title="statement not covered" >    (type === 'number' ||</span>
+<span class="cstat-no" title="statement not covered" >      (type !== 'symbol' &amp;&amp; reIsUint.test(value))) &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered" >        (value &gt; -1 &amp;&amp; value % 1 == 0 &amp;&amp; value &lt; length)</span>
+<span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
 export default isIndex
 &nbsp;</pre></td></tr></table></pre>
@@ -145,7 +145,7 @@ export default isIndex
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-01T11:15:00.749Z
+                at 2024-12-10T17:16:48.578Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
