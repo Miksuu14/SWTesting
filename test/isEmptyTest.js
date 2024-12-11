@@ -6,7 +6,11 @@ describe('isEmpty function', () => {
     //Empty, null and undefined
     it('Should return true for null, undefined and empty', () => {
         expect(isEmpty(null)).to.eql(true);
+    })
+    it('Should return true for undefined', () => {
         expect(isEmpty(undefined)).to.eql(true);
+    })
+    it('Should return true for empty', () => {
         expect(isEmpty()).to.eql(true);
     })
     //Variables: number, boolean and string
