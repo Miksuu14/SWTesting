@@ -62,28 +62,25 @@ describe('at function', () => {
         expect(at(object, ['d', 'x'])).to.deep.equal(['test', undefined ]);
     });
 
-    it('Try giving invalid types as object', () => {
+    it('Number as a path', () => {
         const object = {'a': 1};
-
-        // Number as a path
         expect(at(object, 123)).to.deep.equal([undefined]);
-
-        // Null as a path
-        expect(at(object, null)).to.deep.equal([undefined]);
-
-        // Undefined as a path
-        expect(at(object, undefined)).to.deep.equal([undefined]);
-        
-        // Boolean as a path
-        expect(at(object, true)).to.deep.equal([undefined]);
-    
     });
 
-   // it('Object as a path', () => {
-    //    const object = {'a': 1};
-        // Object as a path
-   //     expect(at(object, { key: 'value' })).to.deep.equal([undefined]);
-  //  });
+    it('Null as a path', () => {
+        const object = {'a': 1};
+        expect(at(object, null)).to.deep.equal([undefined]);
+    });
+
+    it('Undefined as a path', () => {
+        const object = {'a': 1};
+        expect(at(object, undefined)).to.deep.equal([undefined]);   
+    });
+
+    it('boolean as a path', () => {
+        const object = {'a': 1};
+        expect(at(object, true)).to.deep.equal([undefined]);   
+    });        
 
     it('Try returning an empty array for empty paths array', () => {
         const object = { 'a': 1 };
