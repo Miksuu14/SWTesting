@@ -4,7 +4,7 @@ import {expect} from 'chai';
 
 describe('filter function', () => {
     //Testing empty, null and undefined values
-    it('should return an empty array when given a null, undefinen array or an empty array', () => {
+    it('should return an empty array when given a null, undefined array or an empty array', () => {
         expect(filter(null, () => true)).to.eql([]);
         expect(filter(undefined, () => true)).to.eql([]);
         expect(filter([], () => true)).to.eql([]);   
